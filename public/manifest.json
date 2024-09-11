@@ -1,0 +1,21 @@
+{
+  "short_name": "React App",
+  "name": "Daggupati Rama Chandra Naidu",
+  "icons": [
+ 
+    {
+      "src": "drcnthumb.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logodrcn.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
