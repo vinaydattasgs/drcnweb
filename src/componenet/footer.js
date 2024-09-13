@@ -31,7 +31,7 @@ const Footer = () => {
                                     <p>
                                         Address:<br />
                                         DRCN Store Rajampet
-                                        near bala bhadi school, Y.B.N Palli, D.B.N. Palli, Rajampet, Andhra Pradesh 516115
+                                        near bala bhadi school, D.B.N. Palli, Rajampet, Andhra Pradesh 516115
                                     </p>
                                 </div>
                                 <div>

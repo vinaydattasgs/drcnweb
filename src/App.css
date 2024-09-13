@@ -706,6 +706,7 @@ height: 100vh;
 
 .us_section .box .img-box {
   margin-bottom: 15px;
+  height: 75px;
 }
 
 .us_section .box .img-box img {
@@ -1075,8 +1076,6 @@ height: 100vh;
   color: #FFF;
 }
 
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
 
 
 @media (max-width: 1120px) {}
