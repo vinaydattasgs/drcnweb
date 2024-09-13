@@ -17,7 +17,7 @@ const NearbyDRCN = () => {
                         DRCN's Near by Places
                     </h2>
                     <p>
-                    Explore 6 near by Places for transport to DRCN Store
+                        Explore 6 near by Places for transport to DRCN Store
                     </p>
                 </div>
                 <div className="sale_container">
@@ -30,81 +30,81 @@ const NearbyDRCN = () => {
                                 Bus stand
                             </h6>
                             <p>
-                            Situated near to the banks and 1 KM to old bus stand and 1.5KM new bus stand of Rajampet
+                                Situated near to the banks and 1 KM to old bus stand and 1.5KM new bus stand of Rajampet
                             </p>
                         </div>
                     </div>
                     <div className="box">
                         <div className="img-box">
-                        <img src={Flight} alt="DRCN" />
+                            <img src={Flight} alt="DRCN" />
                         </div>
                         <div className="detail-box">
                             <h6>
                                 Airport
                             </h6>
                             <p>
-                            Situated near to the 60 KM to kadapa Airport and 92KM to tirupathi Airport
-                            
+                                Situated near to the 60 KM to kadapa Airport and 92KM to tirupathi Airport
+
                             </p>
                         </div>
                     </div>
                     <div className="box">
                         <div className="img-box">
-                        <img src={Railway} alt="DRCN" />
+                            <img src={Railway} alt="DRCN" />
                         </div>
                         <div className="detail-box">
                             <h6>
-Railway Station
+                                Railway Station
                             </h6>
                             <p>
-                               Only nearest to Rajampet Railway Station. Its only 2KM 
+                                Only nearest to Rajampet Railway Station. Its only 2KM
                             </p>
                         </div>
                     </div>
                     <div className="box">
                         <div className="img-box">
-                        <img src={Port} alt="DRCN" />
+                            <img src={Port} alt="DRCN" />
                         </div>
                         <div className="detail-box">
                             <h6>
                                 Port
                             </h6>
                             <p>
-                            Situated near to the 120KM to Nellor Port and 172KM to Chennial Port
-                           
-                              </p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="img-box">
-                        <img src={Annamiah} alt="DRCN" />
-                            
-                        </div>
-                        <div className="detail-box">
-                            <h6>
-                               Annamiah Circle
-                            </h6>
-                            <p>
-                            One of the best tourist spot. Its 150 Feet Road and 4 KM from DRCN Store
+                                Situated near to the 120KM to Nellor Port and 172KM to Chennial Port
+
                             </p>
                         </div>
                     </div>
                     <div className="box">
                         <div className="img-box">
-                        <img src={Ntrcircle} alt="DRCN" />
+                            <img src={Annamiah} alt="DRCN" />
+
+                        </div>
+                        <div className="detail-box">
+                            <h6>
+                                Annamiah Circle
+                            </h6>
+                            <p>
+                                One of the best tourist spot. Its 150 Feet Road and 4 KM from DRCN Store
+                            </p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <div className="img-box">
+                            <img src={Ntrcircle} alt="DRCN" />
                         </div>
                         <div className="detail-box">
                             <h6>
                                 NTR Circle 150 Feet Road
                             </h6>
                             <p>
-                            You can have transport facilities nicely. Its 150 Feet Road and 2 KM from DRCN Store
+                                You can have transport facilities nicely. Its 150 Feet Road and 2 KM from DRCN Store
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="btn-box">
-                    <a   aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                         Find More
                     </a>
                 </div>

@@ -1,7 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from 'axios';
+
 
 const Contactform = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        number: '',
+        message: ''
+    });
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [error, setError] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
+
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    // Handle form submission with Axios
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setError('');
+        setSuccessMessage('');
+
+        try {
+            const response = await axios.post('https://your-server-endpoint.com/api/submit', formData);
+            console.log('Form Data Submitted:', response.data);
+            setSuccessMessage('Form Submitted Successfully!');
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setError('Failed to submit the form or unable to connet database. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
+
+
         <div>
             <section className="contact_section " >
                 <div className="container">
@@ -20,7 +64,7 @@ const Contactform = () => {
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.4684539267732!2d79.15900997414182!3d14.187853987050543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb325d1620d5397%3A0xaa9bd1fb7fce933e!2sDRCN%20Shops%20Rajampet!5e1!3m2!1sen!2sin!4v1726067122080!5m2!1sen!2sin"
                                         width="600"
                                         height="550"
-                                        allowfullscreen
+                                        allowFullScreen
                                         title="Example Site"
                                         frameBorder="0"
                                     ></iframe>
@@ -30,23 +74,49 @@ const Contactform = () => {
                         </div>
                         <div className="col-lg-4 col-md-5 ">
                             <div className="form_container">
-                                <form action="">
+                                <form onSubmit={handleSubmit}>
                                     <div>
-                                        <input type="text" placeholder="Name" />
+                                        <input type="text" placeholder="Name"
+                                            id="name"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required />
                                     </div>
                                     <div>
-                                        <input type="email" placeholder="Email" />
+                                        <input type="email" placeholder="Email" id="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Phone Number" />
+                                        <input placeholder="Phone Number" type="tel"
+                                            id="number"
+                                            name="number"
+                                            value={formData.number}
+                                            onChange={handleChange}
+                                            required />
                                     </div>
                                     <div>
-                                        <input type="text" className="message-box" placeholder="Message" />
+                                        <textarea className="message-box" placeholder="Message"
+                                            id="message"
+                                            name="message"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
-                                    <div className="d-flex ">
-                                        <button>
-                                            Send
+                                    <div>
+                                        <button type="submit">
+                                            {isSubmitting ? 'Submitting...' : 'Submit'}
+
                                         </button>
+                                        <div >
+                                        {error && <p className="bgcolorwhite" style={{ color: '#ff0000' }}>{error}</p>}
+                                        {successMessage && <p className="bgcolorwhite" style={{ color: 'green' }}>{successMessage}</p>}
+                                        </div>
+                                       
                                     </div>
                                 </form>
                             </div>
@@ -55,7 +125,7 @@ const Contactform = () => {
                     </div>
                 </div>
             </section >
-           
+
         </div>
 
     )

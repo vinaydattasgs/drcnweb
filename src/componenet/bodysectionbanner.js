@@ -3,23 +3,23 @@ import React from 'react';
 const Bodysectionone = () => {
     return (
         <div>
-            <section class="slider_section ">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4 offset-md-1">
-                            <div class="detail-box">
+            <section className="slider_section ">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-4 offset-md-1">
+                            <div className="detail-box">
                                 <h1>
                                     <span> Modern</span> <br />
                                     Store House <br />
-                                    
+
                                 </h1>
                                 <p>
-                                Retail is a customer business. You're trying to take care of the customer, solve something for the customer. 
-                                DRCN Store only can light and do love to that.
-                                
-                                 </p>
-                                <div class="btn-box">
-                                    <a    aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new" class="">
+                                    Retail is a customer business. You're trying to take care of the customer, solve something for the customer.
+                                    DRCN Store only can light and do love to that.
+
+                                </p>
+                                <div className="btn-box">
+                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new" className="">
                                         Read More
                                     </a>
                                 </div>

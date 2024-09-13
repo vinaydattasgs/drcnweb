@@ -30,17 +30,17 @@ const Pricing = () => {
                                 </h2>
                                 <ul>
                                     <li>
-                                    Monthly subscriptions provide flexibility and lower upfront costs
+                                        Monthly subscriptions provide flexibility and lower upfront costs
                                     </li>
                                     <li>
                                         Month By Month
                                     </li>
-                                  
+
                                 </ul>
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a   aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                            <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                                 Buy Now
                             </a>
                         </div>
@@ -61,17 +61,17 @@ const Pricing = () => {
                                 </h2>
                                 <ul>
                                     <li>
-                                  6 month subscriptions provide flexibility and lower upfront costs.
+                                        6 month subscriptions provide flexibility and lower upfront costs.
                                     </li>
                                     <li>
                                         Pay on Jan and July
                                     </li>
-                                 
+
                                 </ul>
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a   aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                            <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                                 Buy Now
                             </a>
                         </div>
@@ -88,21 +88,21 @@ const Pricing = () => {
                             </div>
                             <div className="text-box">
                                 <h2>
-                                   INR 76000 
+                                    INR 76000
                                 </h2>
                                 <ul>
                                     <li>
-                                    While annual subscriptions offer cost savings and less administrative hassle
+                                        While annual subscriptions offer cost savings and less administrative hassle
                                     </li>
                                     <li>
                                         Pay Yearly
                                     </li>
-                                 
+
                                 </ul>
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a   aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                            <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                                 Buy Now
                             </a>
                         </div>

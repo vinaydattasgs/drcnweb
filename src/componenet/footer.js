@@ -15,7 +15,7 @@ import Location from '../images/location.png';
 const Footer = () => {
     return (
         <div>
-           
+
             <section className="info_section ">
                 <div className="container">
                     <div className="row">
@@ -52,7 +52,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                     
+
                         <div className="col-md-4">
                             <div className="info_form ">
                                 <h5>
@@ -60,22 +60,22 @@ const Footer = () => {
                                 </h5>
                                 <form action="">
                                     <input type="email" placeholder="Enter your email" />
-                                        <button>
-                                            Subscribe
-                                        </button>
+                                    <button>
+                                        Subscribe
+                                    </button>
                                 </form>
                                 <div className="social_box">
-                                    <a  aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                                         <img src={Fb} alt="" />
                                     </a>
-                                    <a aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
                                         <img src={Twitter} alt="" />
                                     </a>
-                                    <a aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
-                                        <img src={Linkedin} alt=""/>
+                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                        <img src={Linkedin} alt="" />
                                     </a>
-                                    <a aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
-                                        <img src={Youtube} alt=""/>
+                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                        <img src={Youtube} alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className="container">
                     <p>
                         &copy; <span id="displayYear">2024</span> All Rights Reserved By
-                        <a aria-label="Perform action"  href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new"> DRCN - Daggupati Rama Chandra Naidu</a>
+                        <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new"> DRCN - Daggupati Rama Chandra Naidu</a>
                     </p>
                 </div>
             </section>
