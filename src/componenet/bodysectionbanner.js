@@ -19,7 +19,7 @@ const Bodysectionone = () => {
 
                                 </p>
                                 <div className="btn-box">
-                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new" className="">
+                                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new" className="">
                                         Read More
                                     </a>
                                 </div>

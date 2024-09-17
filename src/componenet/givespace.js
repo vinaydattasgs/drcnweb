@@ -16,7 +16,7 @@ const Givespace = () => {
               </div>
               <p>
                 Adding space between them can make them seem more beautiful and valuable. This is known as the space-to-product ratio effect. Studies show that more space between products can increase sales, the likelihood of purchase, and even how people perceive the product's taste.</p>
-              <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+              <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
                 Get A Quote
               </a>
             </div>

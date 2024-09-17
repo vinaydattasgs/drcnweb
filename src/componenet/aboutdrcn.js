@@ -26,7 +26,7 @@ const AboutDrcn = () => {
                                 Daggupati Rama Chandra Naidu store is
                                 the greatest glory in living lies not in never falling, but in rising every time we fall. My storehouse having been burnt down, nothing obstructs my view of the bright moon
                             </p>
-                            <a href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new" aria-label="Perform action" >
+                            <a href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new" aria-label="Perform action" >
                                 Read More
                             </a>
                         </div>

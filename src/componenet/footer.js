@@ -65,16 +65,16 @@ const Footer = () => {
                                     </button>
                                 </form>
                                 <div className="social_box">
-                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
                                         <img src={Fb} alt="" />
                                     </a>
-                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
                                         <img src={Twitter} alt="" />
                                     </a>
-                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
                                         <img src={Linkedin} alt="" />
                                     </a>
-                                    <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new">
+                                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
                                         <img src={Youtube} alt="" />
                                     </a>
                                 </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className="container">
                     <p>
                         &copy; <span id="displayYear">2024</span> All Rights Reserved By
-                        <a aria-label="Perform action" href="https://maps.app.goo.gl/TpBDJqAsY4MoyEAGA" target="_new"> DRCN - Daggupati Rama Chandra Naidu</a>
+                        <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new"> DRCN - Daggupati Rama Chandra Naidu</a>
                     </p>
                 </div>
             </section>
