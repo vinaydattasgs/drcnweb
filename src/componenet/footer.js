@@ -7,11 +7,6 @@ import Mail from '../images/mail.png';
 import Phone from '../images/phone.png';
 import Location from '../images/location.png';
 
-
-
-
-
-
 const Footer = () => {
     return (
         <div>

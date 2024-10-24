@@ -5,7 +5,7 @@ import U3 from '../images/u-3.png';
 import U4 from '../images/u-4.png';
 
 
-const Chooseus = () => {
+const Chooseus = () => { 
   return (
     <section className="us_section layout_padding2">
 

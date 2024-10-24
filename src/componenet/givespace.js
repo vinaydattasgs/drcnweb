@@ -21,7 +21,7 @@ const Givespace = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6"> 
             <div className="img-box">
               <div className="box b1">
                 <img src={Space1} alt="" />

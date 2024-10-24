@@ -2,7 +2,7 @@ import React from 'react';
 import DrcnLogo from '../images/logodrcn.png';
 
 
-const Header = () => {
+const Header = () => { 
     return (
         <header className="header_section">
             <div className="container-fluid">

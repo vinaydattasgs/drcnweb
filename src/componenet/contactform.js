@@ -4,44 +4,68 @@ import axios from 'axios';
 
 const Contactform = () => {
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        number: '',
-        message: ''
-    });
-
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [error, setError] = useState('');
-    const [successMessage, setSuccessMessage] = useState('');
-
-    // Handle input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
+    
+        const [formData, setFormData] = useState({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
         });
-    };
+    
+        const handleChange = (e) => {
+            const { name, value } = e.target;
+            setFormData({ ...formData, [name]: value });
+        };
+    
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            try {
+                const response = await axios.post('http://localhost:5000/api/submit', formData);
+                alert(response.data.message);
+            } catch (error) {
+                alert('Error submitting form. Please try again.');
+                console.error('There was an error!', error);
+            }
+        };
 
-    // Handle form submission with Axios
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        setError('');
-        setSuccessMessage('');
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '', 
+    //     number: '',
+    //     message: ''
+    // });
 
-        try {
-            const response = await axios.post('https://your-server-endpoint.com/api/submit', formData);
-            console.log('Form Data Submitted:', response.data);
-            setSuccessMessage('Form Submitted Successfully!');
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            setError('Failed to submit the form or unable to connet database. Please try again.');
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
+    // const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [error, setError] = useState('');
+    // const [successMessage, setSuccessMessage] = useState('');
+
+    // // Handle input changes
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData({
+    //         ...formData,
+    //         [name]: value
+    //     });
+    // };
+
+    // // Handle form submission with Axios
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setIsSubmitting(true);
+    //     setError('');
+    //     setSuccessMessage('');
+
+    //     try {
+    //         const response = await axios.post('https://your-server-endpoint.com/api/submit', formData);
+    //         console.log('Form Data Submitted:', response.data);
+    //         setSuccessMessage('Form Submitted Successfully!');
+    //     } catch (error) {
+    //         console.error('Error submitting form:', error);
+    //         setError('Failed to submit the form or unable to connet database. Please try again.');
+    //     } finally {
+    //         setIsSubmitting(false);
+    //     }
+    // };
 
     return (
 
@@ -91,12 +115,12 @@ const Contactform = () => {
                                             required />
                                     </div>
                                     <div>
-                                        <input placeholder="Phone Number" type="tel"
-                                            id="number"
-                                            name="number"
-                                            value={formData.number}
-                                            onChange={handleChange}
-                                            required />
+                                        <input placeholder="Phone Number" 
+                                         type="text"
+                                         name="phone"
+                                         value={formData.phone}
+                                         onChange={handleChange}
+                                         required />
                                     </div>
                                     <div>
                                         <textarea className="message-box" placeholder="Message"
@@ -109,13 +133,13 @@ const Contactform = () => {
                                     </div>
                                     <div>
                                         <button type="submit">
-                                            {isSubmitting ? 'Submitting...' : 'Submit'}
+                                           Submit
 
                                         </button>
-                                        <div >
+                                        {/* <div >
                                         {error && <p className="bgcolorwhite" style={{ color: '#ff0000' }}>{error}</p>}
                                         {successMessage && <p className="bgcolorwhite" style={{ color: 'green' }}>{successMessage}</p>}
-                                        </div>
+                                        </div> */}
                                        
                                     </div>
                                 </form>

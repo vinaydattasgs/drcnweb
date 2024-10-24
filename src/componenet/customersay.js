@@ -4,7 +4,7 @@ import Clients2 from '../images/client2.jpg';
 
 
 const Customersay = () => {
-    return (
+    return ( 
 
         <section className="client_section layout_padding">
             <div className="container-fluid">

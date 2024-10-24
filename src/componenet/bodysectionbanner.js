@@ -5,7 +5,7 @@ const Bodysectionone = () => {
         <div>
             <section className="slider_section ">
                 <div className="container-fluid">
-                    <div className="row">
+                    <div className="row"> 
                         <div className="col-md-4 offset-md-1">
                             <div className="detail-box">
                                 <h1>

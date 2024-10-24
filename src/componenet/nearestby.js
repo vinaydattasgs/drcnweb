@@ -8,7 +8,13 @@ import Ntrcircle from '../images/ntrcircle.jpg';
 
 
 
-const NearbyDRCN = () => {
+const NearbyDRCN = () => { 
+
+
+
+    
+
+
     return (
         <section className="sale_section layout_padding-bottom">
             <div className="container-fluid">

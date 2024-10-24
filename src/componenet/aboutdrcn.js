@@ -2,7 +2,7 @@ import React from "react";
 import Square from '../images/square.png';
 import Storein from '../images/workln.jpg';
 
-const AboutDrcn = () => {
+const AboutDrcn = () => { 
     return (
         <section className="about_section layout_padding-bottom">
             <div className="square-box">

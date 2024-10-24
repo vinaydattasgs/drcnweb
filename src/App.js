@@ -10,6 +10,7 @@ import Givespace from './componenet/givespace';
 import Header from './componenet/header';
 import NearbyDRCN from './componenet/nearestby'
 import Pricing from './componenet/pricing';
+import DataComponent from './componenet/datagett';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Bodysectionone></Bodysectionone>
       </div>
       <div>
+        <DataComponent></DataComponent>
         <AboutDrcn></AboutDrcn>
         <NearbyDRCN></NearbyDRCN>
         <Pricing></Pricing>
