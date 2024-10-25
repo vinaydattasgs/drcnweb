@@ -16,29 +16,42 @@ const DataComponent = () => {
     }, []);
 
     return (
-        <div>
+        <div className='bg-sectionlist'>
             <section className="contact_section " >
                 <div className="container">
                     <div className="heading_container">
                         <h2>
-                            List of Users 
+                            List of Users
                         </h2>
                     </div>
                 </div>
             </section>
-            <ul>
-                {data.map(item => (
-                    <div className='row text-center m-0' key={item.id}>
-                        <div className='col-md-3'>{item.Name}</div>
-                        <div className='col-md-3'>{item.Email}</div>
-                        <div className='col-md-3'>{item.Phone}</div>
-                        <div className='col-md-3'>{item.Message}</div>
-                    
-
+            <div>
+                <div className='row m-0' >
+                    <div className='col-md-12 pb-4 mb-4' >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Message</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map(item => (
+                                    <tr key={item.id}>
+                                        <td>{item.Name}</td>
+                                        <td>{item.Email}</td>
+                                        <td>{item.Phone}</td>
+                                        <td>{item.Message}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
-
-                ))}
-            </ul>
+                </div>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import DrcnLogo from '../images/logodrcn.png';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => { 
@@ -14,11 +15,12 @@ const Header = () => {
                         <ul className="navbar-nav justify-content-between ">
                             <div className="User_option">
                                 <li className="">
-                                    <a aria-label="Perform action" href='/' className="mr-4" >
-                                        Login
+                                   
+                                    <a aria-label="Perform action"  className="mr-4" >
+                                    <Link to="/DataComponent">List</Link>
                                     </a>
-                                    <a aria-label="Perform action" href='/' className="">
-                                        Sign up
+                                    <a aria-label="Perform action" className="">
+                                    <Link to="/Contactform">Contact</Link>
                                     </a>
                                 </li>
                             </div>

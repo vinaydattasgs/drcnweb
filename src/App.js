@@ -1,38 +1,45 @@
 
 import './App.css';
-import AboutDrcn from './componenet/aboutdrcn';
-import Bodysectionone from './componenet/bodysectionbanner';
-import Chooseus from './componenet/chooseus';
-import Contactform from './componenet/contactform';
-import Customersay from './componenet/customersay';
+
 import Footer from './componenet/footer';
-import Givespace from './componenet/givespace';
+import Home from './componenet/Home'
 import Header from './componenet/header';
-import NearbyDRCN from './componenet/nearestby'
-import Pricing from './componenet/pricing';
+import Contactform from './componenet/contactform';
 import DataComponent from './componenet/datagett';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <div className="hero_area">
-        <Header></Header>
-        <Bodysectionone></Bodysectionone>
-      </div>
+
+      <Router>
+        <div className="hero_area">
+          <Header></Header>
+
+
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/DataComponent" element={<DataComponent />} />
+              <Route path="/Contactform" element={<Contactform />} />
+            </Routes>
+          </main>
+
+         
+          <Footer></Footer>
+        </div>
+      </Router>
+
+
       <div>
-        <DataComponent></DataComponent>
-        <AboutDrcn></AboutDrcn>
-        <NearbyDRCN></NearbyDRCN>
-        <Pricing></Pricing>
-        <Givespace></Givespace>
-        <Chooseus></Chooseus>
-        <Customersay></Customersay>
-        <Contactform></Contactform>
+
+
+
       </div>
-      <div>
-        <Footer></Footer>
-      </div>
+
     </div>
+
   );
 }
 
