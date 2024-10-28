@@ -16,12 +16,12 @@ const Header = () => {
                             <div className="User_option">
                                 <li className="">
                                    
-                                    <a aria-label="Perform action"  className="mr-4" >
+                                    <span aria-label="Perform action"  className="mr-4" >
                                     <Link to="/DataComponent">List</Link>
-                                    </a>
-                                    <a aria-label="Perform action" className="">
+                                    </span>
+                                    <span aria-label="Perform action" className="">
                                     <Link to="/Contactform">Contact</Link>
-                                    </a>
+                                    </span >
                                 </li>
                             </div>
                         </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 const Contactform = () => {
@@ -137,7 +137,7 @@ const Contactform = () => {
                                            Submit
 
                                         </button>
-                                        <a href="#" className="mr-2 br-line pl-2">View list</a>
+                                        {/* <a href="#" className="mr-2 br-line pl-2">View list</a> */}
                                         
                                         {/* <div >
                                         {error && <p className="bgcolorwhite" style={{ color: '#ff0000' }}>{error}</p>}
