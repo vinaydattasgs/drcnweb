@@ -5,29 +5,36 @@ import axios from 'axios';
 
 const Contactform = () => {
 
-    
-        const [formData, setFormData] = useState({
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setFormData({
             name: '',
             email: '',
             phone: '',
             message: ''
         });
-    
-        const handleChange = (e) => {
-            const { name, value } = e.target;
-            setFormData({ ...formData, [name]: value });
-        };
-    
-        const handleSubmit = async (e) => {
-            e.preventDefault();
-            try {
-                const response = await axios.post('http://localhost:5000/api/submit', formData);
-                alert(response.data.message);
-            } catch (error) {
-                alert('Error submitting form. Please try again.');
-                console.error('There was an error!', error);
-            }
-        };
+
+        try {
+            const response = await axios.post('http://localhost:5000/api/submit', formData);
+            alert(response.data.message);
+        } catch (error) {
+            alert('Error submitting form. Please try again.');
+            console.error('There was an error!', error);
+        }
+    };
 
     // const [formData, setFormData] = useState({
     //     name: '',
@@ -116,12 +123,12 @@ const Contactform = () => {
                                             required />
                                     </div>
                                     <div>
-                                        <input placeholder="Phone Number" 
-                                         type="text"
-                                         name="phone"
-                                         value={formData.phone}
-                                         onChange={handleChange}
-                                         required />
+                                        <input placeholder="Phone Number"
+                                            type="text"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required />
                                     </div>
                                     <div>
                                         <textarea className="message-box" placeholder="Message"
@@ -134,16 +141,16 @@ const Contactform = () => {
                                     </div>
                                     <div>
                                         <button type="submit">
-                                           Submit
+                                            Submit
 
                                         </button>
                                         {/* <a href="#" className="mr-2 br-line pl-2">View list</a> */}
-                                        
+
                                         {/* <div >
                                         {error && <p className="bgcolorwhite" style={{ color: '#ff0000' }}>{error}</p>}
                                         {successMessage && <p className="bgcolorwhite" style={{ color: 'green' }}>{successMessage}</p>}
                                         </div> */}
-                                       
+
                                     </div>
                                 </form>
                             </div>

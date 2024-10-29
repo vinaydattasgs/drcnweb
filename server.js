@@ -49,6 +49,21 @@ app.post('/api/submit', (req, res) => {
     });
 });
 
+// API to delete a record by ID
+app.delete('/api/records/:Name', (req, res) => {
+    const { id } = req.params;
+    const sql = 'DELETE FROM getTouch WHERE Name = ?';
+  
+    db.query(sql, [Name], (err, result) => {
+      if (err) throw err;
+  
+      if (result.affectedRows === 0) {
+        return res.status(404).send({ message: 'Record not found' });
+      }
+  
+      res.send({ message: 'Record deleted successfully', id });
+    });
+  });
 
 // Start the server
 app.listen(5000, () => {

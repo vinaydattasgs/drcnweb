@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.table-last-child tbody tr td:last-child{
+  max-width: 360px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,7 +36,16 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-
+.topscroll{
+  width: 40px;
+  position: fixed;
+  cursor: pointer;
+right: 20px;
+bottom: 30px;
+}
+.topscroll img{
+  width: 100%;
+}
 .layout_padding2 {
   padding: 45px 0;
 }
@@ -1165,7 +1176,9 @@ table th {
     height: auto;
   }
 
-
+  .map-responsive iframe{
+    width: 100%;
+  }
   .custom_menu-btn button span {
     background-color: #0f2480;
   }
@@ -1292,7 +1305,20 @@ table th {
     align-items: center;
 
   }
+  table{
+    word-break: break-all;
+  }
+  .contact_section .heading_container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
 
+.heading_container h2{
+  padding-left: 11px;
+  font-size: 21px;
+  border-left: 5px solid #054285;
+}
   .client_section .client_container .box .detail-box {
     margin-top: 25px;
   }

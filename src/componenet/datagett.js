@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+// import RecordsTable from './RecordsTable';
 
 const DataComponent = () => {
     const [data, setData] = useState([]);
@@ -29,7 +30,7 @@ const DataComponent = () => {
             <div>
                 <div className='row m-0' >
                     <div className='col-md-12 pb-4 mb-4' >
-                        <table>
+                        <table className='table-last-child'>
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -45,10 +46,12 @@ const DataComponent = () => {
                                         <td>{item.Email}</td>
                                         <td>{item.Phone}</td>
                                         <td>{item.Message}</td>
+                                       
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
+                        {/* <RecordsTable></RecordsTable> */}
                     </div>
                 </div>
             </div>
