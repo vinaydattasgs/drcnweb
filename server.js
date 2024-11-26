@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-
+ 
 // Set up MySQL connection
 const db = mysql.createConnection({
     host: 'localhost',  // Your MySQL host
@@ -21,6 +21,28 @@ db.connect(err => {
     } else {
         console.log('Connected to MySQL');
     }
+});
+
+// API endpoint to create the table if it does not exist
+app.get('/api/create-table', (req, res) => {
+    const createTableQuery = ` 
+    CREATE TABLE IF NOT EXISTS getTouch ( 
+    Name VARCHAR(100) PRIMARY KEY,  
+    Email  VARCHAR(100) NOT NULL,  
+    Phone INT NOT NULL UNIQUE, 
+    Message  VARCHAR(100) NOT NULL, 
+    Actions);
+       
+    `;
+
+    db.query(createTableQuery, (err, results) => {
+        if (err) {
+            console.error('Error creating table:', err);
+            return res.status(500).send({ error: 'Error creating table' });
+        }
+
+        res.send({ message: 'Table created successfully or already exists', results });
+    });
 });
 
 // API endpoint to get data
@@ -51,19 +73,22 @@ app.post('/api/submit', (req, res) => {
 
 // API to delete a record by ID
 app.delete('/api/records/:Name', (req, res) => {
-    const { id } = req.params;
+    const { Name } = req.params; // Correctly extract Name from req.params
     const sql = 'DELETE FROM getTouch WHERE Name = ?';
-  
+
     db.query(sql, [Name], (err, result) => {
-      if (err) throw err;
-  
-      if (result.affectedRows === 0) {
-        return res.status(404).send({ message: 'Record not found' });
-      }
-  
-      res.send({ message: 'Record deleted successfully', id });
+        if (err) {
+            return res.status(500).send({ message: 'Error deleting record', error: err });
+        }
+
+        if (result.affectedRows === 0) {
+            return res.status(404).send({ message: 'Record not found' });
+        }
+
+        res.send({ message: 'Record deleted successfully', Name });
     });
-  });
+});
+
 
 // Start the server
 app.listen(5000, () => {

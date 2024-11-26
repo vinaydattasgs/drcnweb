@@ -1,6 +1,7 @@
 import React from "react";
 import Space1 from '../images/d-1.jpg';
 import Space2 from '../images/d-2.jpg';
+import { Link } from 'react-router-dom';
 
 const Givespace = () => {
   return (
@@ -16,9 +17,9 @@ const Givespace = () => {
               </div>
               <p>
                 Adding space between them can make them seem more beautiful and valuable. This is known as the space-to-product ratio effect. Studies show that more space between products can increase sales, the likelihood of purchase, and even how people perceive the product's taste.</p>
-              <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-                Get A Quote
-              </a>
+             
+                <Link to="/Contactform">  Get A Quote</Link>
+              
             </div>
           </div>
           <div className="col-md-6"> 

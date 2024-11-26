@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const Pricing = () => {
@@ -40,9 +41,9 @@ const Pricing = () => {
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-                                Buy Now
-                            </a>
+                            <Link to="/Contactform">Buy Now</Link>
+
+
                         </div>
                     </div>
                     <div className="box">
@@ -71,9 +72,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-                                Buy Now
-                            </a>
+                            <Link to="/Contactform">Buy Now</Link>
                         </div>
                     </div>
                     <div className="box">
@@ -102,9 +101,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         <div className="btn-box">
-                            <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-                                Buy Now
-                            </a>
+                            <Link to="/Contactform">Buy Now</Link>
                         </div>
                     </div>
                 </div>

@@ -14,7 +14,37 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* .slick-arrow{
 
+} */
+.width-88{
+  /* width: 88% !important; */
+  margin: 0px auto;
+}
+
+.client_container .slick-arrow{
+  border-radius: 36px !important;
+  background-color: #054285 !important;
+  padding: 12px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+.client_container .slick-arrow::after{
+  inset-inline-start:6px;
+  top: 9px !important;
+
+}
+.client_container .slick-prev::after{
+  inset-inline-start:9px;
+  top: 9px !important;
+
+}
+.client_container .slick-prev{
+left:-7% !important;
+}
+.client_container .slick-next{
+  right:-7% !important;
+  }
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

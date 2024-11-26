@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     // Add scroll event listener
     window.addEventListener('scroll', toggleVisibility);
-    
+
     // Cleanup listener on component unmount
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
@@ -51,9 +51,9 @@ function App() {
               <Route path="/Contactform" element={<Contactform />} />
             </Routes>
             {isVisible && (
-            <div className='topscroll' onClick={scrollToTop}>
-              <img src={TopImg} alt="Move top" />
-            </div>
+              <div className='topscroll' onClick={scrollToTop}>
+                <img src={TopImg} alt="Move top" />
+              </div>
             )}
           </main>
 

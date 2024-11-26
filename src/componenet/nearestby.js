@@ -5,14 +5,15 @@ import Railway from '../images/railway.jpeg';
 import Port from '../images/port.png';
 import Annamiah from '../images/annmai.jpg';
 import Ntrcircle from '../images/ntrcircle.jpg';
+import { Link } from 'react-router-dom';
 
 
 
-const NearbyDRCN = () => { 
+const NearbyDRCN = () => {
 
 
 
-    
+
 
 
     return (
@@ -110,9 +111,8 @@ const NearbyDRCN = () => {
                     </div>
                 </div>
                 <div className="btn-box">
-                    <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-                        Find More
-                    </a>
+                    <Link to="/Contactform">Find More</Link>
+
                 </div>
             </div>
         </section>

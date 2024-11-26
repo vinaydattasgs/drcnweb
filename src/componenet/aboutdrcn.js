@@ -1,6 +1,7 @@
 import React from "react";
 import Square from '../images/square.png';
 import Storein from '../images/workln.jpg';
+import { Link } from 'react-router-dom';
 
 const AboutDrcn = () => { 
     return (
@@ -26,9 +27,8 @@ const AboutDrcn = () => {
                                 Daggupati Rama Chandra Naidu store is
                                 the greatest glory in living lies not in never falling, but in rising every time we fall. My storehouse having been burnt down, nothing obstructs my view of the bright moon
                             </p>
-                            <a href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new" aria-label="Perform action" >
-                                Read More
-                            </a>
+                            <Link to="/Contactform">Read More</Link>
+                           
                         </div>
                     </div>
                 </div>

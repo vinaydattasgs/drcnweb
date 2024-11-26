@@ -3,9 +3,10 @@ import U1 from '../images/u-1.png';
 import U2 from '../images/u-2.png';
 import U3 from '../images/u-3.png';
 import U4 from '../images/u-4.png';
+import { Link } from 'react-router-dom';
 
 
-const Chooseus = () => { 
+const Chooseus = () => {
   return (
     <section className="us_section layout_padding2">
 
@@ -78,9 +79,8 @@ const Chooseus = () => {
           </div>
         </div>
         <div className="btn-box">
-          <a aria-label="Perform action" href="https://docs.google.com/forms/d/1oXBtsF3TsFWy7_lSOSBRxQZFX64Mp65zThbH45j-duc/prefill" target="_new">
-            Get A Quote
-          </a>
+          <Link to="/Contactform">Get A Quote</Link>
+
         </div>
       </div>
     </section>
